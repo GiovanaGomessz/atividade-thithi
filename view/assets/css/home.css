@@ -1,0 +1,49 @@
+:root{
+    --cor-preta:#000814;
+    --cor-azul-escuro: #001D3D;
+    --cor-azul: #003566;
+    --cor-nav:#073158fa;
+    --cor-amarelo-ovo: #FFC300;
+    --cor-amarelo: #FFD60A;
+    --cor-branca: #ffff;
+    --cor-off-white: #E5E7E6;
+    --asdfg: #ffffffa1;
+}
+
+
+.prod{
+    width: 250px;
+    height: 220px;
+
+}
+
+.card{
+    display: flex;
+    grid-template-columns: repeat(4, 1r);
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: var(--cor-amarelo-ovo);
+    margin-top: 3%;
+}
+
+.card .produtitos:hover{
+    transform: translateY(-10px);
+    background-color: var(--cor-azul-escuro);
+    color: var(--cor-off-white);
+}
+
+.produtitos{
+    width: 250px;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px var(--cor-branca);
+    transition: 0.3s;
+
+}
+
+.produtitos:hover{
+    box-shadow: 0 0 10px var(--cor-amarelo-ovo);
+}

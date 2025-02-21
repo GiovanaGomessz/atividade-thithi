@@ -1,0 +1,140 @@
+@import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+:root{
+    --cor-preta:#000814;
+    --cor-azul-escuro: #001D3D;
+    --cor-azul: #003566;
+    --cor-nav:#073158fa;
+    --cor-amarelo-ovo: #FFC300;
+    --cor-amarelo: #FFD60A;
+    --cor-branca: #ffff;
+    --asdfg: #ffffffa1;
+}
+
+.nav {
+    grid-column: 2;
+    grid-row: 1/4;
+    height: 80px;
+    width: 759%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.621);
+    background: var(--cor-nav);
+
+}
+
+aside {
+    grid-column: 1;
+    grid-row: 1 / 4;
+    width: 250px;
+    background: var(--cor-azul-escuro);
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 2;
+    height: 100%;
+    position: fixed;
+
+
+    ul{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    a{
+        color: var(--cor-branca);
+        margin: 10px;
+        margin-bottom: 20px;
+        font-size: 30px;
+        text-decoration: none;
+    }
+    
+    a:hover{
+        color: var(--cor-amarelo-ovo);
+    }
+}
+
+main {
+    flex-direction: column;
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    padding-left: 80px;
+
+    td{
+        background: var(--cor-azul-escuro);
+    }
+}
+
+footer {
+    height: 60px;
+    bottom: 0;
+    grid-column: 2;
+    grid-row: 3;
+    background:var(--cor-azul);
+}
+
+
+body {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 68px 1fr 60px;
+
+    p{
+        margin: 10px 0;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 48px 1fr 22px;
+    }
+
+    aside{
+        display: none;
+    }
+
+    nav{
+        grid-column: 1;
+    }
+    main{
+        grid-column: 1;
+    }
+    footer{
+        grid-column: 1;
+    }
+
+
+}
+
+button{
+    background:var(--cor-amarelo-ovo);
+    color: var(--cor-azul-escuro);
+    gap: 10px;
+    border-radius: 5px;
+    width: 40px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button:hover{
+    background: var(--cor-amarelo);
+    color: var(--cor-azul);
+}
+
+/* 
+.scroll{
+    height: 800px;
+    overflow-y: auto;
+    overflow-x: hidden;
+} */
