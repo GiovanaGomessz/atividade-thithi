@@ -2,10 +2,10 @@
 
 require_once __DIR__ . "/../config/database.php";
 
-class ProdutoModel
+class UsuarioModel
 {
     private $conn;
-    private $table = "produto";
+    private $table = "usuario";
 
     public function __construct() {
         $db = new database();
